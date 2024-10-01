@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-EU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Table Tennis Game">
+    <meta name="keywords" content="html, css, javascript, developer, retro game consoles, indie game developer, table top tennis, ping pong">
+    <meta name="author" content="Andy Webb">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Grumpy Frog's Table Tennis</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="images/bats.png" alt="Table Tennis Bats">
+            <p>Grumpy Frog's Table Tennis</p>
+        </div>
+    </header>
+
+    <div class="instruction">To Play please enter both players names. Feel free to change paddle colours and then click "Play Game".</div>
+
+    <div class="players">
+        <div class="player1">
+            <p>Player 1</p>
+            <input type="text" id="player1Name" placeholder="Enter Player 1's Name">
+            <p>Paddle Colour: <input type="color" id="player1Color" value="#ff0000"></p>
+        </div>
+
+        <div class="player2">
+            <p>Player 2</p>
+            <input type="text" id="player2Name" placeholder="Enter Player 2's Name">
+            <p>Paddle Colour: <input type="color" id="player2Color" value="#0000ff"></p>
+        </div>
+    </div>
+
+    <div id="warning">Please enter valid names (letters only) for both players.</div>
+
+    <div class="container">
+        <canvas id="gameCanvas" width="600" height="300"></canvas>
+    </div>
+
+    <div class="button-container">
+        <button onclick="startGame()">Play Game</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
